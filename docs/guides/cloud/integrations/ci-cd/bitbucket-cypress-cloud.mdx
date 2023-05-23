@@ -1,11 +1,11 @@
 ---
-title: Using Cypress Cloud with Gitlab CI/CD
-sidebar_position: 10
-sidebar_label: Gitlab CI/CD
+title: Using Cypress Cloud with Bitbucket Pipelines
+sidebar_position: 40
+sidebar_label: Bitbucket Pipelines
 ---
 
-In the GitLab CI configuration we have defined in the previous section, we are
-leveraging three useful features of
+In the Bitbucket Pipelines configuration we have defined in the previous
+section, we are leveraging three useful features of
 [Cypress Cloud](https://on.cypress.io/cloud):
 
 1. [Recording test results with the `--record` flag](https://on.cypress.io/how-do-i-record-runs)
@@ -14,14 +14,14 @@ leveraging three useful features of
    - In-depth and shareable [test reports](/guides/cloud/runs).
    - Visibility into test failures via quick access to error messages, stack
      traces, screenshots, videos, and contextual details.
-   - [Integrating testing with the merge-request process](/guides/cloud/integrations/gitlab)
+   - [Integrating testing with the pull-request process](/guides/cloud/integrations/bitbucket)
      via
-     [commit status guards](/guides/cloud/integrations/gitlab#Commit-statuses)
+     [commit status check guards](/guides/cloud/integrations/bitbucket#Status-checks)
      and convenient
-     [test report comments](/guides/cloud/integrations/gitlab#Merge-Request-comments).
+     [pull request comments](/guides/cloud/integrations/bitbucket#Pull-Request-comments).
    - [Detecting flaky tests](/guides/cloud/flaky-test-management) and surfacing
      them via [Slack alerts](/guides/cloud/flaky-test-management#Slack) or
-     [GitLab PR status checks](/guides/cloud/integrations/gitlab).
+     [Bitbucket PR status checks](/guides/cloud/integrations/bitbucket).
 
 2. [Parallelizing test runs](/guides/guides/parallelization) and optimizing
    their execution via
