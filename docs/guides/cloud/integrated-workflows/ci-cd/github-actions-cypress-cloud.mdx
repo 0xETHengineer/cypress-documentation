@@ -1,0 +1,37 @@
+---
+title: Using Cypress Cloud with GitHub Actions
+sidebar_position: 10
+sidebar_label: GitHub Actions
+---
+
+<DocsVideo src="https://youtube.com/embed/Oqq-_QZWzhg" />
+
+In the GitHub Actions configuration, we have defined in the previous section, we
+are leveraging three useful features of
+[Cypress Cloud](https://on.cypress.io/cloud):
+
+1. [Recording test results with the `record: true` option](https://on.cypress.io/how-do-i-record-runs)
+   to [Cypress Cloud](https://on.cypress.io/cloud):
+
+   - In-depth and shareable [test reports](/guides/cloud/runs).
+   - Visibility into test failures via quick access to error messages, stack
+     traces, screenshots, videos, and contextual details.
+   - [Integrating testing with the pull-request (PR) process](/guides/cloud/integrations/github)
+     via
+     [commit status check guards](/guides/cloud/integrations/github#Status-checks)
+     and convenient
+     [test report comments](/guides/cloud/integrations/github#Pull-request-comments).
+   - [Detecting flaky tests](/guides/cloud/flaky-test-management) and surfacing
+     them via [Slack alerts](/guides/cloud/flaky-test-management#Slack) or
+     [GitHub PR status checks](/guides/cloud/flaky-test-management#GitHub).
+
+2. [Parallelizing test runs](/guides/guides/parallelization) and optimizing
+   their execution via
+   [intelligent load-balancing](/guides/guides/parallelization#Balance-strategy)
+   of test specs across CI machines with the `parallel: true` option.
+
+3. Organizing and consolidating multiple `cypress run` calls by labeled groups
+   into a single report within [Cypress Cloud](https://on.cypress.io/cloud). In
+   the example above, we use the `group: "UI - Chrome"` option to organize all
+   UI tests for the Chrome browser into a group labeled "UI - Chrome" in the
+   [Cypress Cloud](https://on.cypress.io/cloud) report.
