@@ -25,9 +25,9 @@
     "run-all-scripts": "./scripts/boom-shakalaka.sh"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.0",
+    "@docusaurus/core": "^3.0.1",
     "@docusaurus/plugin-google-tag-manager": "^2.4.0",
-    "@docusaurus/preset-classic": "^2.4.0",
+    "@docusaurus/preset-classic": "^3.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
